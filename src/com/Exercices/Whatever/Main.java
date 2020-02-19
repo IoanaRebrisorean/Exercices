@@ -63,7 +63,8 @@ public class Main {
 //        System.out.println("rest= "+ rest(7,10));
 //        System.out.println(rest(10,7));
 
-
+        //Assignment8: Scrieti o metoda java, care sa primeasca ca si parametru un numar, care sa reprezinte temperatura in Fahrenheit, si sa returneze temperatura in Celsius. Formula de calcul este: C = 5/9 * (F -32
+        System.out.println("Temp Celsius = " + celsius());
     }
 
 
@@ -120,8 +121,15 @@ public class Main {
             return (int) c;
             }
 
-
-
+    //Assignment8: Scrieti o metoda java, care sa primeasca ca si parametru un numar, care sa reprezinte temperatura in Fahrenheit, si sa returneze temperatura in Celsius. Formula de calcul este: C = 5/9 * (F -32
+    public static float celsius(){
+        int fahrenheit;
+        Scanner numar = new Scanner(System.in);
+        System.out.println("Temp Fahrenheit = ");
+        fahrenheit = numar.nextInt();
+        float celsius = 5f / 9f * (fahrenheit - 32);
+        return celsius;
+    }
 
 
 
